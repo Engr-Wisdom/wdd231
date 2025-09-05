@@ -48,13 +48,13 @@ main > h1 {
   gap: 50px;
 }
 
-.about-cont div {
+.about-cont section {
   background-color: rgb(204, 200, 200);
   border-radius: 10px;
   overflow: auto;
 }
 
-.about-cont div h1 {
+.about-cont section h2 {
   background-color: rgb(90, 5, 90);
   text-align: center;
   color: white;
