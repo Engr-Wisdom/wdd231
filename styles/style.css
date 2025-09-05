@@ -18,7 +18,7 @@ header {
   display: none;
 }
 
-#nav-bar {
+#nav-bar ul {
   display: flex;
   gap: 50px;
   list-style: none;
@@ -79,6 +79,7 @@ main > h1 {
 .student-img img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .course-cont {
@@ -197,8 +198,8 @@ footer {
   }
 
   main > h1,
-  .about-cont div h1,
-  .course-cont h1,
+  .about-cont section h2,
+  .course-cont h2,
   .course-btn button {
     font-size: 20px;
   }
@@ -234,10 +235,7 @@ footer {
     width: 60%;
     right: -60%;
     top: 0;
-    flex-direction: column;
-    text-align: center;
     padding-top: 50px;
-    gap: 30px;
     transition: 0.3s ease;
   }
 
@@ -246,11 +244,18 @@ footer {
     box-shadow: -10px 0 20px rgb(22, 22, 22);
   }
 
+  #nav-bar ul {    
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
   #nav-bar li a {
     font-size: 15px;
   }
 
   #remove-btn {
+    display: block;
     background-color: inherit;
     border: none;
     font-size: 30px;
@@ -269,8 +274,8 @@ footer {
     margin-bottom: 20px;
   }
 
-  .about-cont div h1,
-  .course-cont h1,
+  .about-cont section h2,
+  .course-cont h2,
   .course-btn button,
   #courses p,
   .course-cont > p,
