@@ -1,5 +1,3 @@
-toggleBar();
-
 function toggleBar() {
     let menuBtn = document.getElementById("menu-btn");
     let navBar = document.getElementById("nav-bar");
@@ -18,9 +16,11 @@ function toggleBar() {
             if (!menuBtn.contains(event.target) && !navBar.contains(event.target)) {
                 navBar.classList.remove("show")
             }
-        })
+        });
     }
 }
+
+toggleBar();
 
 const courses = [
     {
@@ -130,17 +130,17 @@ function displayCourse(courses) {
 
 allBtn.addEventListener("click", () => {
     displayCourse(courses)
-})
+});
 
 cseBtn.addEventListener("click", () => {
     let cse = courses.filter(course => course.subject === "CSE")
     displayCourse(cse);
-})
+});
 
 wddBtn.addEventListener("click", () => {
     let wdd = courses.filter(course => course.subject === "WDD");
     displayCourse(wdd);
-})
+});
 
 let lastModified = document.getElementById("last-modified");
 let displayYear = document.getElementById("year")
@@ -156,4 +156,4 @@ setInterval(() => {
     
     displayYear.textContent = `${year}`;
     lastModified.textContent = `Last Modification: ${date}/${month}/${year}, ${hour}:${minute}:${second}`
-})
+});
