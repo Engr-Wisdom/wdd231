@@ -1,0 +1,86 @@
+[
+  {
+    "img": "images/tech.jpg",
+    "name": "Tech Solution Inc",
+    "email": "info@gmail.com",
+    "phone": "123-456-7890",
+    "url": "https://www.techsolutions.com"
+  },
+  {
+    "img": "images/finance.jpg",
+    "name": "Fast Finance Group",
+    "email": "info@gmail.com",
+    "phone": "800-555-1234",
+    "url": "https://www.fastfinancial.com"
+  },
+  {
+    "img": "images/green-earth.jpg",
+    "name": "Green Earth Co",
+    "email": "info@gmail.com",
+    "phone": "987-654-3210",
+    "url": "https://www.greenearth.com"
+  },
+  {
+    "img": "images/health.jpg",
+    "name": "Health & Wellness Center",
+    "email": "info@gmail.com",
+    "phone": "456-789-0123",
+    "url": "https://www.healthwellness.com"
+  },
+  {
+    "img": "images/nextgame.jpg",
+    "name": "NextGen Gaming",
+    "email": "info@gmail.com",
+    "phone": "321-654-9870",
+    "url": "https://www.nextgengaming.com"
+  },
+  {
+    "img": "images/urban.jpg",
+    "name": "Tech Solution Inc",
+    "email": "info@gmail.com",
+    "phone": "800-555-1234",
+    "url": "https://www.nextgengaming.com"
+  },
+  {
+    "img": "images/b2.jpg",
+    "name": "Tech Solution Inc",
+    "email": "info@gmail.com",
+    "phone": "800-555-1234",
+    "url": "mybusiness.com"
+  },
+  {
+    "img": "images/b2.jpg",
+    "name": "Tech Solution Inc",
+    "email": "info@gmail.com",
+    "phone": "800-555-1234",
+    "url": "mybusiness.com"
+  },
+  {
+    "img": "images/b2.jpg",
+    "name": "Tech Solution Inc",
+    "email": "info@gmail.com",
+    "phone": "800-555-1234",
+    "url": "mybusiness.com"
+  },
+  {
+    "img": "images/b2.jpg",
+    "name": "Tech Solution Inc",
+    "email": "info@gmail.com",
+    "phone": "800-555-1234",
+    "url": "mybusiness.com"
+  },
+  {
+    "img": "images/b2.jpg",
+    "name": "Tech Solution Inc",
+    "email": "info@gmail.com",
+    "phone": "800-555-1234",
+    "url": "mybusiness.com"
+  },
+  {
+    "img": "images/b2.jpg",
+    "name": "Tech Solution Inc",
+    "email": "info@gmail.com",
+    "phone": "800-555-1234",
+    "url": "mybusiness.com"
+  }
+]
