@@ -36,7 +36,7 @@ function displayBusiness(values) {
 }
 
 async function fetchBusiness() {
-    let response = await fetch("./scripts/index.json");
+    let response = await fetch("./JSON/members.json");
     if (!response.ok) {
         console.error("Can't get data from this resource")
     }
@@ -46,22 +46,6 @@ async function fetchBusiness() {
 }
 
 fetchBusiness();
-
-
-// fetch("./scripts/index.json")
-//     .then(response => response.json())
-//     .then(values => displayBusiness(values))
-//     .catch(error => console.error("Can't get data from this resource", error))
-
-
-
-let listBtn = document.getElementById("list");
-let businessCont = document.getElementById("business-cont")
-
-listBtn.addEventListener("click", () => {
-    businessCont.classList.toggle("list")
-});
-
 
 let lastModification = document.getElementById("last-modification");
 
@@ -75,4 +59,21 @@ setInterval(() => {
     let second = String(date.getSeconds()).padStart(2, 0);
 
     lastModification.textContent = `Last Modification: ${month}/${day}/${year} ${hour}:${minute}:${second}`
-})
+});
+
+let listBtn = document.getElementById("list");
+let businessCont = document.getElementById("business-cont");
+let business = document.getElementsByClassName("business");
+let businessFigcaption = document.querySelectorAll("figure");
+console.log(businessFigcaption)
+
+for (let i = 0; i < businessFigcaption.length; i++) {
+    console.log(i)
+}
+
+listBtn.addEventListener("click", () => {
+    businessCont.classList.toggle("list")
+    for (let i = 0; i < business.length; i++) {
+        business[i].classList.toggle("list")
+    }
+});
