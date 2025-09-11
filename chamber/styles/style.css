@@ -349,7 +349,7 @@ footer ul li {
     border: none;
     right: 40px;
     cursor: pointer;
-    transition: 0.3ss ease;
+    transition: 0.3s ease;
   }
 
   .hero img {
