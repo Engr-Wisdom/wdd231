@@ -4,35 +4,40 @@
     "name": "Tech Solution Inc",
     "email": "info@gmail.com",
     "phone": "123-456-7890",
-    "url": "https://www.techsolutions.com"
+    "url": "https://www.techsolutions.com",
+    "memberLevel": "Gold"
   },
   {
     "img": "images/finance.jpg",
     "name": "Fast Finance Group",
     "email": "info@gmail.com",
     "phone": "800-555-1234",
-    "url": "https://www.fastfinancial.com"
+    "url": "https://www.fastfinancial.com",
+    "memberLevel": "Gold"
   },
   {
     "img": "images/green-earth.jpg",
     "name": "Green Earth Co",
     "email": "info@gmail.com",
     "phone": "987-654-3210",
-    "url": "https://www.greenearth.com"
+    "url": "https://www.greenearth.com",
+    "memberLevel": "Gold"
   },
   {
     "img": "images/health.jpg",
     "name": "Health & Wellness Center",
     "email": "info@gmail.com",
     "phone": "456-789-0123",
-    "url": "https://www.healthwellness.com"
+    "url": "https://www.healthwellness.com",
+    "memberLevel": "Gold"
   },
   {
     "img": "images/nextgame.jpg",
     "name": "NextGen Gaming",
     "email": "info@gmail.com",
     "phone": "321-654-9870",
-    "url": "https://www.nextgengaming.com"
+    "url": "https://www.nextgengaming.com",
+    "memberLevel": "Gold"
   },
   {
     "img": "images/urban.jpg",

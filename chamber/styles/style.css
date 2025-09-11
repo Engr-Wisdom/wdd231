@@ -35,6 +35,10 @@ header .circle {
   display: none;
 }
 
+#remove-btn {
+  display: none;
+}
+
 #nav-bar ul {
   display: flex;
   align-items: center;
@@ -150,6 +154,10 @@ main>h1 {
 
 #view.show {
   height: 100px;
+}
+
+#view h4 {
+  color: black !important;
 }
 
 #view button {
@@ -308,7 +316,8 @@ footer ul li {
     bottom: 0;
     width: 70%;
     padding-top: 50px;
-    transition: ease 0.3s
+    transition: ease 0.3s;
+    z-index: 999;
   }
 
   #nav-bar.show {
@@ -328,6 +337,19 @@ footer ul li {
     border: none;
     color: white;
     cursor: pointer;
+  }
+
+  #remove-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    font-size: 35px;
+    background-color: inherit;
+    color: rgb(241, 73, 43);
+    border: none;
+    right: 40px;
+    cursor: pointer;
+    transition: 0.3ss ease;
   }
 
   .hero img {

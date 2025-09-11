@@ -11,11 +11,16 @@ toggleMode()
 function toggleNavBar() {
     let navBar = document.getElementById("nav-bar");
     let menuBtn = document.getElementById("menu-btn");
+    let removeBtn = document.getElementById("remove-btn");
 
     if (navBar) {
         menuBtn.addEventListener("click", () => {
             navBar.classList.toggle("show");
         });
+
+        removeBtn.addEventListener("click", () => {
+            navBar.classList.remove("show");
+        })
 
         document.addEventListener("click", event => {
             if (!menuBtn.contains(event.target) && !navBar.contains(event.target)) {
