@@ -1,3 +1,13 @@
+function toggleMode() {
+    let mode = document.getElementById("mode");
+
+    mode.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+    })
+}
+
+toggleMode()
+
 function toggleNavBar() {
     let navBar = document.getElementById("nav-bar");
     let menuBtn = document.getElementById("menu-btn");
@@ -17,6 +27,53 @@ function toggleNavBar() {
 
 toggleNavBar();
 
+function displayBusinessView() {
+    let viewBtn = document.getElementById("view-btn");
+    let view = document.getElementById("view")
+
+    viewBtn.addEventListener("click", () => {
+        view.classList.toggle("show")
+    })
+
+    let businessCont = document.getElementById("business-cont");
+    let business = document.getElementsByClassName("business")
+
+    let card = document.getElementById("card");
+    let list = document.getElementById("list");
+
+    list.addEventListener("click", event => {
+        if (event) {
+            list.classList.add("active");
+            card.classList.remove("active")
+
+            businessCont.classList.add("list")
+
+            for (let i = 0; i < business.length; i++) {
+                business[i].classList.add("list")
+            }
+
+            view.classList.remove("show");
+        }
+    });
+
+    card.addEventListener("click", event => {
+        if (event) {
+            card.classList.add("active");
+            list.classList.remove("active");
+
+            businessCont.classList.remove("list")
+
+            for (let i = 0; i < business.length; i++) {
+                business[i].classList.remove("list")
+            }
+
+            view.classList.remove("show")
+        }
+    });
+}
+
+displayBusinessView();
+
 function displayBusiness(values) {
     let businessCont = document.getElementById("business-cont");
     values.forEach(value => {
@@ -31,6 +88,10 @@ function displayBusiness(values) {
                 <p><strong>URL:</strong> <a href="${value.url}">${value.url}</a></p>
             </figcaption>
         `;
+
+        figure.addEventListener("click", () => {
+            window.location.href = `${value.url}`
+        })
         businessCont.appendChild(figure)
     });
 }
@@ -59,21 +120,4 @@ setInterval(() => {
     let second = String(date.getSeconds()).padStart(2, 0);
 
     lastModification.textContent = `Last Modification: ${month}/${day}/${year} ${hour}:${minute}:${second}`
-});
-
-let listBtn = document.getElementById("list");
-let businessCont = document.getElementById("business-cont");
-let business = document.getElementsByClassName("business");
-let businessFigcaption = document.querySelectorAll("figure");
-console.log(businessFigcaption)
-
-for (let i = 0; i < businessFigcaption.length; i++) {
-    console.log(i)
-}
-
-listBtn.addEventListener("click", () => {
-    businessCont.classList.toggle("list")
-    for (let i = 0; i < business.length; i++) {
-        business[i].classList.toggle("list")
-    }
 });
