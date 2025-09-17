@@ -25,6 +25,22 @@ header section {
   align-items: center;
 }
 
+header .logo {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo div {
+  display: flex;
+  flex-direction: column;
+}
+
 header .circle {
   font-size: 20px;
   cursor: pointer;
@@ -98,18 +114,18 @@ main>h1 {
   color: white
 }
 
-.weather-info {
+#weather-data {
   display: flex;
   padding: 10px;
   gap: 20px;
 }
 
-.weather-info img {
+#weather-data img {
   width: 150px;
   height: 100px;
 }
 
-.weather-info p {
+#weather-data p {
   font-size: 20px;
 }
 
@@ -179,7 +195,7 @@ main>h1 {
   grid-template-columns: repeat(4, 1fr);
   width: 80%;
   margin: auto;
-  gap: 20px;
+  gap: 30px;
   margin-top: 20px;
 }
 
@@ -275,7 +291,6 @@ footer ul li {
 
 @media (max-width: 1300px) {
   header {
-    font-size: 10px;
     padding: 30px 50px;
   }
 
@@ -308,6 +323,36 @@ footer ul li {
     gap: 10px
   }
 
+  .hero img {
+    height: 30vh;
+  }
+
+  #business-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    font-size: 15px;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .social-media-icon ul {
+    font-size: 30px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  header .logo {
+    margin-right: 50px;
+  }
+
+  .logo div {
+    font-size: 12px;
+  }
+
   #nav-bar {
     background-color: navy;
     position: fixed;
@@ -332,7 +377,7 @@ footer ul li {
 
   #menu-btn {
     display: block;
-    font-size: 30px;
+    font-size: 25px;
     background-color: inherit;
     border: none;
     color: white;
@@ -351,26 +396,6 @@ footer ul li {
     cursor: pointer;
     transition: 0.3s ease;
   }
-
-  .hero img {
-    height: 30vh;
-  }
-
-  #business-cont {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  footer {
-    font-size: 15px;
-    gap: 20px;
-    padding: 30px 20px;
-  }
-
-  .social-media-icon ul {
-    font-size: 30px;
-    gap: 20px;
-  }
 }
 
 @media (max-width: 650px) {
@@ -380,7 +405,7 @@ footer ul li {
 }
 
 @media (max-width: 550px) {
-  .weather-info p {
+  #weather-data p {
     font-size: 15px;
   }
 

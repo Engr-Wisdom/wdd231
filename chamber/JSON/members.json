@@ -13,7 +13,7 @@
     "email": "info@gmail.com",
     "phone": "800-555-1234",
     "url": "https://www.fastfinancial.com",
-    "memberLevel": "Gold"
+    "memberLevel": "Silver"
   },
   {
     "img": "images/green-earth.jpg",
@@ -21,7 +21,7 @@
     "email": "info@gmail.com",
     "phone": "987-654-3210",
     "url": "https://www.greenearth.com",
-    "memberLevel": "Gold"
+    "memberLevel": "Bronze"
   },
   {
     "img": "images/health.jpg",
@@ -37,55 +37,62 @@
     "email": "info@gmail.com",
     "phone": "321-654-9870",
     "url": "https://www.nextgengaming.com",
-    "memberLevel": "Gold"
+    "memberLevel": "Silver"
   },
   {
     "img": "images/urban.jpg",
     "name": "Tech Solution Inc",
     "email": "info@gmail.com",
     "phone": "800-555-1234",
-    "url": "https://www.nextgengaming.com"
+    "url": "https://www.nextgengaming.com",
+    "memberLevel": "Bronze"
   },
   {
     "img": "images/b2.jpg",
     "name": "Tech Solution Inc",
     "email": "info@gmail.com",
     "phone": "800-555-1234",
-    "url": "mybusiness.com"
+    "url": "mybusiness.com",
+    "memberLevel": "Silver"
   },
   {
     "img": "images/b2.jpg",
     "name": "Tech Solution Inc",
     "email": "info@gmail.com",
     "phone": "800-555-1234",
-    "url": "mybusiness.com"
+    "url": "mybusiness.com",
+    "memberLevel": "Gold"
   },
   {
     "img": "images/b2.jpg",
     "name": "Tech Solution Inc",
     "email": "info@gmail.com",
     "phone": "800-555-1234",
-    "url": "mybusiness.com"
+    "url": "mybusiness.com",
+    "memberLevel": "Silver"
   },
   {
     "img": "images/b2.jpg",
     "name": "Tech Solution Inc",
     "email": "info@gmail.com",
     "phone": "800-555-1234",
-    "url": "mybusiness.com"
+    "url": "mybusiness.com",
+    "memberLevel": "Bronze"
   },
   {
     "img": "images/b2.jpg",
     "name": "Tech Solution Inc",
     "email": "info@gmail.com",
     "phone": "800-555-1234",
-    "url": "mybusiness.com"
+    "url": "mybusiness.com",
+    "memberLevel": "Gold"
   },
   {
     "img": "images/b2.jpg",
     "name": "Tech Solution Inc",
     "email": "info@gmail.com",
     "phone": "800-555-1234",
-    "url": "mybusiness.com"
+    "url": "mybusiness.com",
+    "memberLevel": "Silver"
   }
 ]

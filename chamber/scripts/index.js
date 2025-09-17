@@ -91,6 +91,7 @@ function displayBusiness(values) {
                 <p><strong>EMAIL:</strong> ${value.email}</p>
                 <p><strong>PHONE:</strong> ${value.phone}</p>
                 <p><strong>URL:</strong> <a href="${value.url}">${value.url}</a></p>
+                <p><strong>Member Level:</strong> ${value.memberLevel}</p>
             </figcaption>
         `;
 
@@ -102,13 +103,18 @@ function displayBusiness(values) {
 }
 
 async function fetchBusiness() {
-    let response = await fetch("./JSON/members.json");
-    if (!response.ok) {
-        console.error("Can't get data from this resource")
-    }
+    try {
+        let response = await fetch("./JSON/members.json");
+        if (!response.ok) {
+            throw new Error("Can't fetch data from resource");
+        }
 
-    let values = await response.json();
-    displayBusiness(values)
+        let values = await response.json();
+        displayBusiness(values);
+
+    } catch(error) {
+        console.error(error);
+    }
 }
 
 fetchBusiness();
@@ -126,3 +132,41 @@ setInterval(() => {
 
     lastModification.textContent = `Last Modification: ${month}/${day}/${year} ${hour}:${minute}:${second}`
 });
+
+
+
+const apiKey = '9de95ed1bd2503d8b9413e95f740b076';
+const city = 'Timbuktu'; // Replace with the chamber's location
+const weatherApiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
+
+function displayWeatherData(values) {
+    let weatherData = document.getElementById('weather-data');
+
+    values.forEach(value => {
+        let figcaption = document.createElement("figcaption");
+        figcaption.innerHTML = `
+            <p>rkhbvhbtnbutb</p>
+        `;
+    })
+
+    weatherData.appendChild(figcaption)
+}
+
+displayWeatherData();
+
+
+async function fetchWeatherData() {
+    try {
+        let response = await fetch(apiKey);
+        console.log(response)
+
+        if(!response.ok) {
+            throw new Error("Can't fetch data from this resource")
+        };
+
+    } catch(error) {
+        console.error(error)
+    }
+}
+
+fetchWeatherData();
