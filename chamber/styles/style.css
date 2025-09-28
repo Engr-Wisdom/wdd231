@@ -12,7 +12,7 @@ body.dark-mode {
 header {
   background-color: navy;
   color: white;
-  padding: 30px 80px;
+  padding: 20px 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -126,12 +126,13 @@ main>h1 {
 }
 
 #weather-data p {
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
-.forecast-info p {
+#forecast-info p {
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .view-container {
@@ -324,7 +325,7 @@ footer ul li {
   }
 
   .hero img {
-    height: 30vh;
+    height: 50vh;
   }
 
   #business-cont {
@@ -350,7 +351,7 @@ footer ul li {
   }
 
   .logo div {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   #nav-bar {
