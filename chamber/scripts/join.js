@@ -10,6 +10,17 @@ const inputs = [
 
 const submitBtn = document.getElementById("submit-btn");
 
+submitBtn.style.opacity = 0.5;
+
+function checkFormCompletion() {
+    let allFilled = inputs.every(input => input.name.value.trim() !== "");
+    if (allFilled) {
+        submitBtn.style.opacity = 1;
+    } else {
+        submitBtn.style.opacity = 0.5;
+    }
+}
+
 inputs.forEach(input => {
     let errorTxt = true;
 
@@ -21,9 +32,15 @@ inputs.forEach(input => {
             input.errorMsg.style.display = "block"
             errorTxt = true;
         }
+
+        checkFormCompletion()
     });
-});
+}); 
 
+// submitBtn.addEventListener("click", event => {
+//     event.preventDefault();
 
-
-// Ephesian 4:1
+//     if (submitBtn.style.opacity === 1) {
+//         console.log("Submitted Successful")
+//     }
+// });

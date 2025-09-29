@@ -32,6 +32,16 @@ function toggleNavBar() {
 
 toggleNavBar();
 
+function callToAction() {
+    let ctaBtn = document.getElementById("cta-btn");
+
+    if (ctaBtn) {
+        ctaBtn.addEventListener("click", () => window.location.href = "./join.html");
+    }
+}
+
+callToAction();
+
 function displayBusinessView() {
     let viewBtn = document.getElementById("view-btn");
     let view = document.getElementById("view")

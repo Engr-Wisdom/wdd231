@@ -59,15 +59,13 @@ async function fetchWeatherData() {
         forecastDays = forecastDays.slice(0, 3);
 
         // Step 4: Display
-        let div = document.createElement("div");
         
         forecastDays.forEach(day => {
             let p = document.createElement("p");
             p.textContent = day;
 
-            div.appendChild(p)
+            forecastInfo.appendChild(p)
         })
-        forecastInfo.appendChild(div);
     } catch(error) {
         console.error(error)
     }
