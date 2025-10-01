@@ -124,6 +124,10 @@ main>h1 {
   border: 1px solid rgb(189, 185, 185);
 }
 
+.events-container {
+  padding: 10px 40px;
+}
+
 .weather-box:nth-child(1) {
   flex: 2;
   min-height: 250px;
@@ -328,6 +332,13 @@ footer ul li {
 
   .hero img {
     height: 50vh;
+    position: relative;
+  }
+
+  .cta {
+    position: absolute;
+    top: 200px;
+    left: 20px;
   }
 
   .business figcaption {
