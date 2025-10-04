@@ -237,6 +237,11 @@ main>h1 {
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.business:hover {
+  transform: scale(1.05);
 }
 
 .business img {
