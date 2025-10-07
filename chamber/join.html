@@ -43,49 +43,49 @@
     </header>
 
     <section class="form-container">
-      <form action="">
+      <form action="thankyou">
         <input type="hidden" name="form-id" value="join-form">
-        
+
         <h1>Membership Application</h1>
         <div>
-          <label for="">First Name:</label>
+          <label for="first-name">First Name:</label>
           <input type="text" id="first-name" required>
           <p class="error-msg" id="first-name-error-txt">Please insert first name</p>
         </div>
 
         <div>
-          <label for="">Last Name:</label>
+          <label for="last-name">Last Name:</label>
           <input type="text" id="last-name" required>
           <p class="error-msg" id="last-name-error-txt">Please insert your last name</p>
         </div>
 
         <div>
-          <label for="">Organizational Title:</label>
+          <label for="title">Organizational Title:</label>
           <input type="text" id="title" required>
           <p class="error-msg" id="title-error-txt">Please insert organisation title</p>
         </div>
 
         <div>
-          <label for="">Email:</label>
+          <label for="email">Email:</label>
           <input type="email" id="email" required>
           <p class="error-msg" id="email-error-txt">Please insert your email</p>
         </div>
 
         <div>
-          <label for="">Phone No:</label>
+          <label for="phone-no">Phone No:</label>
           <input type="tel" id="phone-no" required>
           <p class="error-msg" id="phone-no-error-txt">Please insert your phone no</p>
         </div>
 
         <div>
-          <label for="">Organization/Business Name:</label>
+          <label for="business-name">Organization/Business Name:</label>
           <input type="text" id="business-name" required>
           <p class="error-msg" id="business-name-error-txt">Please insert your business name</p>
         </div>
 
         <div>
-          <label for="" required>Select Membership Level:</label>
-          <select name="" id="membership">
+          <label for="membership" required>Select Membership Level:</label>
+          <select name="membership-level" id="membership">
             <option value="NP Membership (Free for Non-Profits)">NP Membership (Free for Non-Profits)</option>
             <option value="">Gold Membership</option>
             <option value="">Silver Membership</option>
@@ -94,8 +94,8 @@
         </div>
 
         <div>
-          <label for="">Description</label>
-          <textarea name="" id="description"></textarea>
+          <label for="description">Description</label>
+          <textarea name="business-description" id="description"></textarea>
           <p class="error-msg" id="description-error-txt">Please fill in the description</p>
         </div>
 
@@ -127,14 +127,14 @@
         </ul>
       </div>
 
-      <section>
+      <div>
         <ul>
           <li>WDD231 Class Project</li>
           <li>Marie Martinez</li>
           <li>&copy; 20xx Timbuktu Chamber of Commerce</li>
           <li id="last-modification"></li>
         </ul>
-      </section>
+      </div>
     </footer>
 
     <script src="./scripts/index.js"></script>
