@@ -1,5 +1,5 @@
-let btn = document.querySelector("button");
+let homeBtn = document.getElementById("home-btn");
 
-btn.addEventListener("click", () => {
+homeBtn.addEventListener("click", () => {
     window.location.href = "./index.html"
 })

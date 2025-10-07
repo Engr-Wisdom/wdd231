@@ -1,5 +1,5 @@
 .thank-you {
-    max-width: 600px;
+    width: 600px;
     margin: auto;
     text-align: center;
     padding: 50px;
@@ -10,6 +10,7 @@
 
 .thank-you h1 {
     color: #1b4965;
+    font-size: 30px;
 }
 
 .thank-you p {
@@ -27,8 +28,30 @@
     font-weight: bold;
     cursor: pointer;
     transition: ease 0.3s;
+    font-size: 15px;
 }
 
 .thank-you button:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 650px) {
+    .thank-you {
+        width: 100%;
+        box-shadow: 0 0 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .thank-you h1 {
+        font-size: 20px;
+    }
+
+    .thank-you p {
+        font-size: 15px;
+    }
+
+    .thank-you button {
+        font-size: 12px;
+    }
 }

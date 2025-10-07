@@ -72,39 +72,6 @@ textarea {
     opacity: 1;
 }
 
-/* #form-data {
-    display: block;
-}
-
-#form-data h1{
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#form-data li,
-#form-data p {
-    line-height: 40px;
-    font-size: 20px;
-    list-style: none;
-}
-
-#form-data button {
-    padding: 10px 30px;
-    background-color: #1b4965;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: ease 0.3s;
-    font-weight: bold;
-}
-
-#form-data button:hover {
-    transform: scale(1.05)
-} */
-
 @media (max-width: 650px) {
     .form-container {
         box-shadow: 0px 0px 0px;
@@ -131,20 +98,5 @@ textarea {
     #submit-btn {
         font-size: 10px;
         padding: 10px 25px;
-    }
-
-    #form-data h1 {
-        font-size: 20px;
-    }
-
-    #form-data li,
-    #form-data p {
-        font-size: 15px;
-        line-height: 30px;
-    }
-
-    #form-data button {
-        padding: 10px 20px;
-        font-size: 10px;
     }
 }
