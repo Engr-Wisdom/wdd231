@@ -10,7 +10,7 @@
 form h1 {
     font-size: 25px;
     text-align: center;
-    color: navy;
+    color: #1b4965;
 }
 
 form div {
@@ -21,7 +21,7 @@ label {
     display: block;
     font-size: 15px;
     font-weight: bold;
-    color: navy;
+    color: #1b4965;
 }
 
 input, select, textarea {
@@ -52,7 +52,7 @@ textarea {
     padding: 10px 50px;
     font-weight: bold;
     border: none;
-    background-color: navy;
+    background-color: #1b4965;
     opacity: 0.5;
     color: white;
     border-radius: 5px;
@@ -72,7 +72,7 @@ textarea {
     opacity: 1;
 }
 
-#form-data {
+/* #form-data {
     display: block;
 }
 
@@ -91,7 +91,7 @@ textarea {
 
 #form-data button {
     padding: 10px 30px;
-    background-color: navy;
+    background-color: #1b4965;
     color: white;
     border: none;
     border-radius: 5px;
@@ -103,7 +103,7 @@ textarea {
 
 #form-data button:hover {
     transform: scale(1.05)
-}
+} */
 
 @media (max-width: 650px) {
     .form-container {

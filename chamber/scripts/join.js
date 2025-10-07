@@ -15,33 +15,6 @@ const submitBtn = document.getElementById("submit-btn");
 
 submitBtn.style.opacity = 0.5;
 
-function updateFormData() {
-    formData.innerHTML = "";
-
-    let h1 = document.createElement("h1");
-    h1.textContent = "Submitted Information"
-
-    let ul = document.createElement("ul");
-
-    inputs.forEach(input => {
-        let li = document.createElement("li");
-        li.innerHTML = `<strong>${input.label}:</strong> ${input.id.value}`;
-        ul.appendChild(li);
-    });
-    
-    let p = document.createElement("p");
-    p.innerHTML = `<strong>Time Stamp:</strong> ${new Date().toISOString()}`
-
-    let button = document.createElement("button");
-    button.textContent = "Go to Homepage";
-
-    button.addEventListener("click", () => {
-        window.location.href = "./index.html"
-    })
-
-    formData.append(h1, ul, p, button);
-}
-
 function checkFormCompletion() {
     let allFilled = inputs.every(input => input.id.value.trim() !== "");
     if (allFilled) {
@@ -58,7 +31,6 @@ inputs.forEach(input => {
         }
 
         checkFormCompletion();
-        updateFormData();
     });
 }); 
 
@@ -69,9 +41,7 @@ submitBtn.addEventListener("click", event => {
         if (input.id.value == "") {
             input.errorMsg.style.display = "block";
         } else {
-            form.style.display = "none";
-            submitBtn.style.opacity = 0.5;
-            formData.style.display = "block";
+            window.location.href = "./thankyou.html"
         }
     })
 });
