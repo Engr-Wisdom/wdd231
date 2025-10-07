@@ -28,7 +28,7 @@ function updateFormData() {
         li.innerHTML = `<strong>${input.label}:</strong> ${input.id.value}`;
         ul.appendChild(li);
     });
-
+    
     let p = document.createElement("p");
     p.innerHTML = `<strong>Time Stamp:</strong> ${new Date().toISOString()}`
 
@@ -75,10 +75,3 @@ submitBtn.addEventListener("click", event => {
         }
     })
 });
-
-let now = new Date();
-let IOS = now.toISOString()
-
-let timeStamp = `${IOS}`;
-
-console.log(timeStamp)

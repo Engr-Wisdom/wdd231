@@ -44,6 +44,8 @@
 
     <section class="form-container">
       <form action="">
+        <input type="hidden" name="form-id" value="join-form">
+        
         <h1>Membership Application</h1>
         <div>
           <label for="">First Name:</label>
@@ -71,7 +73,7 @@
 
         <div>
           <label for="">Phone No:</label>
-          <input type="number" id="phone-no" required>
+          <input type="tel" id="phone-no" required>
           <p class="error-msg" id="phone-no-error-txt">Please insert your phone no</p>
         </div>
 
@@ -83,8 +85,8 @@
 
         <div>
           <label for="" required>Select Membership Level:</label>
-          <select name="" id="Membership">
-            <option value="">NP Membership (Free for Non-Profits)</option>
+          <select name="" id="membership">
+            <option value="NP Membership (Free for Non-Profits)">NP Membership (Free for Non-Profits)</option>
             <option value="">Gold Membership</option>
             <option value="">Silver Membership</option>
             <option value="">Bronze Membership</option>
