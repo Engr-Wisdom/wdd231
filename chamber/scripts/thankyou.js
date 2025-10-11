@@ -1,5 +1,7 @@
-let homeBtn = document.getElementById("home-btn");
+let modal = document.getElementById("modal");
+let closeModal = document.getElementById("close-modal")
+modal.showModal()
 
-homeBtn.addEventListener("click", () => {
-    window.location.href = "./index.html"
+closeModal.addEventListener("click", () => {
+    modal.close()
 })

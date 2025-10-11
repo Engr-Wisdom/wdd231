@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.planning-head {
+    text-align: center;
+    margin-top: 20px;
+    color: #088178;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main div h2 {
+    color: #088178;
+    border-bottom: 2px solid #088178;
+    padding-bottom: 10px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+main div p,
+main div li {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+main div li {
+    list-style: none;
+}
+
+main div img {
+    width: 50%;
+    margin: auto;
+    transform: translate(50%, 2%);
+}

@@ -1,26 +1,25 @@
-.thank-you {
-    width: 600px;
+dialog {
+    width: 400px;
     margin: auto;
     text-align: center;
-    padding: 50px;
-    margin-top: 50px;
+    padding: 20px;
     box-shadow: 0 0 10px black;
     border-radius: 10px;
 }
 
-.thank-you h1 {
+dialog h1 {
     color: #1b4965;
     font-size: 30px;
 }
 
-.thank-you p {
+dialog p {
     margin: 20px 0;
     font-size: 20px;
 }
 
 
-.thank-you button {
-    padding: 15px 20px;
+dialog button {
+    padding: 10px 20px;
     border-radius: 5px;
     border: none;
     background-color: #1b4965;
@@ -31,27 +30,31 @@
     font-size: 15px;
 }
 
-.thank-you button:hover {
+dialog button:hover {
     transform: scale(1.05);
 }
 
+::backdrop {
+    background-color: rgba(0 0 0 / 50%)
+}
+
 @media (max-width: 650px) {
-    .thank-you {
+    dialog {
         width: 100%;
         box-shadow: 0 0 0;
     }
 }
 
 @media (max-width: 550px) {
-    .thank-you h1 {
+    dialog h1 {
         font-size: 20px;
     }
 
-    .thank-you p {
+    dialog p {
         font-size: 15px;
     }
 
-    .thank-you button {
+    dialog button {
         font-size: 12px;
     }
 }
