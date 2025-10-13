@@ -2,34 +2,42 @@
     {
         "img": "./images/mosque.webp",
         "name": "Djinguereber Mosque",
+        "address": "Timbuktu, Mali",
         "description": "One of the oldest mosque in Africa, built in 1327"
     }, {
-        "img": "./images/mosque.webp",
-        "name": "Djinguereber Mosque",
-        "description": "One of the oldest mosque in Africa, built in 1327"
+        "img": "./images/sankore.webp",
+        "name": "Sankore University",
+        "address": "Timbuktu, Mali",
+        "description": "One of the three ancient centers of learning in Timbuktu"
     }, {
-        "img": "./images/mosque.webp",
-        "name": "Djinguereber Mosque",
-        "description": "One of the oldest mosque in Africa, built in 1327"
+        "img": "./images/manuscript.webp",
+        "name": "Timbuktu Manuscripts",
+        "address": "Timbuktu Labraries, Mali",
+        "description": "Ancient text showcasing African knowledge in science, astronomyadn medicine"
     }, {
-        "img": "./images/mosque.webp",
-        "name": "Djinguereber Mosque",
-        "description": "One of the oldest mosque in Africa, built in 1327"
+        "img": "./images/aham.webp",
+        "name": "Ahmed Baba Institue",
+        "address": "Timbuktu, Mali",
+        "description": "A research center preserving thousands of manuscripts from the 13th century "
     }, {
-        "img": "./images/mosque.webp",
-        "name": "Djinguereber Mosque",
-        "description": "One of the oldest mosque in Africa, built in 1327"
+        "img": "./images/flamme.webp",
+        "name": "Flamme de la Paix",
+        "address": "Timbuktu, Mali",
+        "description": "A monument symbolizing peace, where over 30,000 firearms were burned in 1996"
     }, {
-        "img": "./images/mosque.webp",
-        "name": "Djinguereber Mosque",
-        "description": "One of the oldest mosque in Africa, built in 1327"
+        "img": "./images/market.webp",
+        "name": "Timbuktu Market",
+        "address": "Downtown Timbuktu, Mali", 
+        "description": "A bustling market where you can find local crafts, spices, and traditional Tuareg jewelry"
     }, {
-        "img": "./images/mosque.webp",
-        "name": "Djinguereber Mosque",
-        "description": "One of the oldest mosque in Africa, built in 1327"
+        "img": "./images/faguibine.webp",
+        "name": "Lake Faguibine",
+        "address": "Timbuktu Region, Mali",
+        "description": "Ones the largest lake in Mali, providing water and life to the region"
     }, {
-        "img": "./images/mosque.webp",
-        "name": "Djinguereber Mosque",
-        "description": "One of the oldest mosque in Africa, built in 1327"
+        "img": "./images/desert.webp",
+        "name": "Tuareg Desert Camp",
+        "address": "Sahara Desert near Timbuktu",
+        "description": "Experience Tuareg culture, camel rides, and stunning desert landscapes."
     }
 ]
