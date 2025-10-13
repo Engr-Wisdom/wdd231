@@ -1,16 +1,15 @@
 function displayLastView() {
-    let currentTime = new Date().toISOString();
-    localStorage.setItem("lastView", JSON.stringify(currentTime));
-
     let lastView = localStorage.getItem("lastView");
+    
+    if (!lastView) {
+        localStorage.setItem("lastView", JSON.stringify(new Date().toISOString()))
+        return "Welcome! Let us know if you have any questions."
+    }
+
     let lastTime = new Date(JSON.parse(lastView));
     let now = new Date();
     let diffInMs = now.getTime() - lastTime.getTime();
-    let daysPassed = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
-    
-    if (!lastView) {
-        return "Welcome! Let us know if you have any questions."
-    }
+    let daysPassed = Math.floor(diffInMs / (1000 * 60 * 60 * 24))
 
     if (daysPassed < 1) {
         return "Back so soon! Awesome!"
@@ -19,6 +18,8 @@ function displayLastView() {
     } else {
         return `You last visited ${daysPassed} days ago`
     }
+
+    localStorage.setItem("lastView", JSON.stringify(new Date().toISOString()))
 }
 
 let lastVisit = document.getElementById("lastVisit")
