@@ -6,8 +6,9 @@
 
 .planning-head {
     text-align: center;
-    margin-top: 20px;
+    padding: 20px;
     color: #088178;
+    font-size: 20px;
 }
 
 main {
@@ -37,4 +38,35 @@ main div img {
     width: 50%;
     margin: auto;
     transform: translate(50%, 2%);
+}
+
+@media (max-width: 900px) {
+    .planning-head {
+        font-size: 15px;
+    }
+
+    main div h2 {
+        font-size: 20px;
+    }
+
+    main div p,
+    main div li {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .planning-head {
+        font-size: 12px;
+    }
+
+    main div h2 {
+        font-size: 15px;
+    }
+
+    main div p,
+    main div li {
+        font-size: 12px;
+    }
 }

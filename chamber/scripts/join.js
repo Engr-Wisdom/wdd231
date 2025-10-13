@@ -26,8 +26,15 @@ function checkFormCompletion() {
 
 inputs.forEach(input => {
     input.id.addEventListener("input", () => {
-        if (input.errorMsg) {
-            input.errorMsg.style.display = input.id.value ? "none" : "block";
+        // if (input.errorMsg) {
+        //     input.errorMsg.style.display = input.id.value ? "none" : "block";
+        // }
+
+        if (input.id.value == "") {
+            input.errorMsg.style.display = "block"
+        } else {
+            input.errorMsg.style.display = "none";
+            console.log(input.id.value)
         }
 
         checkFormCompletion();
@@ -37,10 +44,17 @@ inputs.forEach(input => {
 submitBtn.addEventListener("click", event => {
     event.preventDefault();
 
+    let formValue = {}
+
     inputs.forEach(input => {
         if (input.id.value == "") {
             input.errorMsg.style.display = "block";
         } else {
+            localStorage.clear()
+
+            formValue[input.label] = input.id.value
+            localStorage.setItem("formData", JSON.stringify(formValue))
+
             window.location.href = "./thankyou.html"
         }
     })
