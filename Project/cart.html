@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Ecommerce Website Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="logo">
+
+      <button id="menu-btn">&#9776;</button>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <div class="cart-count">            
+            <li><a href="./cart.html" class="active"><i class="fas fa-cart-shopping"></i></a></li>
+            <p>0</p>
+          </div>
+        </ul>
+        <button id="remove-btn">&#215;</button>
+      </nav>
+    </header>
+
+    <section class="cart-hero">
+      <img src="./images/b2.jpg" alt="">
+      <div>
+        <h1>#Cara Cart Products Here</h1>
+        <h2>Buy Offers Products From Cara Cart</h2>
+      </div>
+    </section>
+
+    <main>
+      <div class="carts">
+        <table>
+          <thead>
+            <tr>
+              <td>IMAGE</td>
+              <td>PRODUCT</td>
+              <td>PRICE</td>
+              <td>QUANTITY</td>
+              <td>REMOVE</td>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+      <section class="newsletter-cont">
+        <img src="./images/b2.jpg" alt="">
+        <div class="newsletter">
+          <div>
+            <h1>Sign Up For Newsletters</h1>
+            <p>Get E-mail updates about our latest shop and Special offers</p>
+          </div>
+          <div class="signup-cont">
+            <input type="email" placeholder="Your Email Address">
+            <button>SignUp</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-cont">
+        <div>
+          <img src="./images/logo.png" alt="" />
+          <h2>CONTACT</h2>
+          <ul>
+            <li><strong>ADDRESS:</strong> 53 Mbupka Road Calabar</li>
+            <li><strong>PHONE NO:</strong> +234 813 990 6556</li>
+          </ul>
+          <h3>FOLLOW US</h3>
+        </div>
+
+        <div>
+          <h2>ABOUT</h2>
+          <ul>
+            <li>ABOUT US</li>
+            <li>DELIVERY INFORMATIONS</li>
+            <li>PRIVACY POLICY</li>
+            <li>TERM & CONDITIONS</li>
+            <li>CONTACT US</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>MY ACCOUNT</h2>
+          <ul>
+            <li>SIGN IN</li>
+            <li>VIEW CART</li>
+            <li>MY WISHLIST</li>
+            <li>TRACK MY ORDER</li>
+            <li>HELP</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./scripts/index.js"></script>
+    <script src="./scripts/carts.js" defer></script>
+  </body>
+</html>

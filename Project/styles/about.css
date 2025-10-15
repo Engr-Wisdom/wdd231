@@ -1,0 +1,94 @@
+:root {
+  --primary: #e3e6f3;
+  --secondary: #088178;
+  --accent1: #1a1a1a;
+  --accent2: #ffffff;
+}
+
+.about-hero {
+  position: relative;
+  margin-top: 80px;
+}
+
+.about-hero img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.about-hero div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+.about-hero div h1 {
+  margin-bottom: 20px;
+}
+
+.about-cont {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  gap: 50px;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.about-cont img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--secondary);
+}
+
+.about-cont p {
+  line-height: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.about-app {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about-app video {
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 60%;
+}
+
+@media (max-width: 1100px) {
+  .about-cont p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-hero div {
+    font-size: 12px;
+  }
+
+  .about-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-cont div:nth-child(1) {
+    width: 400px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-cont div:nth-child(1) {
+    width: 90%;
+  }
+}

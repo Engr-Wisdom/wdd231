@@ -1,0 +1,114 @@
+[
+  {
+    "img": "./images/product.jpg",
+    "company": "Adidas",
+    "name": "Cartoon Astro Shirts",
+    "star": "&star;&star;&star;&star;&star;",
+    "price": "$78"
+  },
+  {
+    "img": "./images/product1.jpg",
+    "company": "Zara",
+    "name": "American Boots Shirts",
+    "star": "&star;&star;&star;",
+    "price": "$78"
+  },
+  {
+    "img": "./images/product2.jpg",
+    "company": "Henley",
+    "name": "Classic Gao Shirts",
+    "star": "&star;&star;&star;&star;",
+    "price": "$66"
+  },
+  {
+    "img": "./images/product3.jpg",
+    "company": "Puma",
+    "name": "Classic Gao Shirts",
+    "star": "&star;&star;&star;&star;",
+    "price": "$99"
+  },
+  {
+    "img": "./images/product4.jpg",
+    "company": "US",
+    "name": "Lili Pech Shirts",
+    "star": "&star;&star;&star;",
+    "price": "$28"
+  },
+  {
+    "img": "./images/product5.jpg",
+    "company": "H&M",
+    "name": "Asia South Shirts",
+    "star": "&star;&star;&star;&star;&star;",
+    "price": "$48"
+  },
+  {
+    "img": "./images/product6.jpg",
+    "company": "Levi's",
+    "name": "Lower Fort Paint",
+    "star": "&star;&star;&star;&star;&star;",
+    "price": "$48"
+  },
+  {
+    "img": "./images/product7.jpg",
+    "company": "Nike",
+    "name": "Mendhi Print Shirts",
+    "star": "&star;&star;&star;&star;&star;",
+    "price": "$18"
+  },
+  {
+    "img": "./images/n2.jpg",
+    "company": "Cara",
+    "name": "Leko Boots Shirts",
+    "star": "&star;&star;&star;",
+    "price": "$33 10% off"
+  },
+  {
+    "img": "./images/n3.jpg",
+    "company": "Hennuy",
+    "name": "Hero BOY Shirts",
+    "star": "&star;&star;&star;&star;",
+    "price": "$55 7% off"
+  },
+  {
+    "img": "./images/n1.jpg",
+    "company": "Limmy",
+    "name": "HIHI YUUK Shirts",
+    "star": "&star;&star;&star;&star;",
+    "price": "$22 12% off"
+  },
+  {
+    "img": "./images/n5.jpg",
+    "company": "Donty",
+    "name": "South Set Shirts",
+    "star": "&star;&star;&star;",
+    "price": "$11 7% off"
+  },
+  {
+    "img": "./images/n6.jpg",
+    "company": "H&M",
+    "name": "Sun Set Shirts",
+    "star": "&star;&star;&star;&star;&star;",
+    "price": "$22 28% off"
+  },
+  {
+    "img": "./images/n7.jpg",
+    "company": "Levi's",
+    "name": "Lower Comfort Paint",
+    "star": "&star;&star;&star;&star;&star;",
+    "price": "$38 11% off"
+  },
+  {
+    "img": "./images/n8.jpg",
+    "company": "Denim",
+    "name": "Zara Plus Paint",
+    "star": "&star;&star;&star;&star;&star;",
+    "price": "$22 11% off"
+  },
+  {
+    "img": "./images/n1.jpg",
+    "company": "Rebook",
+    "name": "LILI Pink Shirts",
+    "star": "&star;&star;&star;&star;&star;",
+    "price": "$29 20% off"
+  }
+]

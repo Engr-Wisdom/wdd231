@@ -1,0 +1,111 @@
+:root {
+  --primary: #e3e6f3;
+  --secondary: #088178;
+  --accent1: #1a1a1a;
+  --accent2: #ffffff;
+}
+
+.cart-hero {
+  margin-top: 80px;
+  position: relative;
+}
+
+.cart-hero img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cart-hero div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.carts {
+  overflow: auto;
+  scrollbar-width: none;
+  margin: 50px;
+}
+
+table {
+  width: 95%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+thead {
+  text-align: center;
+  border: 2px solid var(--secondary);
+  height: 50px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+tbody tr td {
+  text-align: center;
+  padding-top: 20px;
+}
+
+tbody img {
+  width: 80px;
+}
+
+tbody input {
+  width: 50px;
+  height: 30px;
+  outline: none;
+  padding: 10px 5px;
+  font-size: 15px;
+}
+
+tbody button {
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: inherit;
+  color: rgb(182, 33, 7);
+}
+
+@media (max-width: 1200px) {
+  .cart-hero div {
+    font-size: 12px;
+  }
+
+  thead {
+    height: 35px;
+    font-size: 5px;
+  }
+
+  thead {
+    height: 30px;
+    font-size: 12px;
+  }
+
+  tbody img {
+    width: 50px;
+  }
+
+  tbody button {
+    font-size: 14px;
+  }
+
+  tbody tr td {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  table {
+    width: 600px;
+  }
+}

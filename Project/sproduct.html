@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sproduct.css">
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="logo">
+
+      <button id="menu-btn">&#9776;</button>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <div class="cart-count">            
+            <li><a href="./cart.html"><i class="fas fa-cart-shopping"></i></a></li>
+            <p>0</p>
+          </div>
+        </ul>
+        <button id="remove-btn">&#215;</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-img">
+        <img src="./images/product.jpg" alt="" loading="lazy" id="main-img" />
+
+        <div class="small-img-container">
+          <div><img src="./images/product.jpg" alt="" loading="lazy" /></div>
+          <div><img src="./images/product.jpg" alt="" loading="lazy" /></div>
+          <div><img src="./images/product.jpg" alt="" loading="lazy" /></div>
+          <div><img src="./images/product.jpg" alt="" loading="lazy" /></div>
+        </div>
+      </section>
+
+      <section class="product-details">
+        <h1 class="product-name">Men's Fashion T Shirt</h1>
+        <h2 class="product-price">$139.00</h2>
+        <select name="" id="">
+          <option value="">Select Size</option>
+          <option value="">XL</option>
+          <option value="">XXL</option>
+          <option value="">Small</option>
+          <option value="">Large</option>
+        </select>
+        <br />
+        <input type="number" min="1" value="1" />
+        <button class="cart-btn">Add To Cart</button>
+        <h3>Product Details</h3>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis
+          eius minima ex voluptates ut vitae molestias ipsa, vel dolor in,
+          eaque, expedita voluptatem maiores iste ea non! Delectus sit doloribus
+          odit. Amet reiciendis quae voluptate consequuntur, qui distinctio
+          sapiente. Eius corporis quasi impedit, molestias maiores recusandae,
+          animi error exercitationem voluptatem repellat tempora beatae.
+          Accusamus error ad autem soluta, dolor velit, unde hic animi omnis
+          perspiciatis earum nesciunt dolores suscipit cum delectus neque ex
+          minus aut. Sit praesentium quia iusto accusamus, debitis hic
+          architecto harum expedita ipsam sed tempora totam reprehenderit fugit
+          cum doloribus ratione nam enim numquam impedit cumque!
+        </p>
+      </section>
+    </main>
+
+    <section class="newsletter-cont">
+      <img src="./images/b2.jpg" alt="" />
+      <div class="newsletter">
+        <div>
+          <h1>Sign Up For Newsletters</h1>
+          <p>Get E-mail updates about our latest shop and Special offers</p>
+        </div>
+        <div class="signup-cont">
+          <input type="email" placeholder="Your Email Address" />
+          <button>SignUp</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-cont">
+        <div>
+          <img src="./images/logo.png" alt="" />
+          <h2>CONTACT</h2>
+          <ul>
+            <li><strong>ADDRESS:</strong> 53 Mbupka Road Calabar</li>
+            <li><strong>PHONE NO:</strong> +234 813 990 6556</li>
+          </ul>
+          <h3>FOLLOW US</h3>
+        </div>
+
+        <div>
+          <h2>ABOUT</h2>
+          <ul>
+            <li>ABOUT US</li>
+            <li>DELIVERY INFORMATIONS</li>
+            <li>PRIVACY POLICY</li>
+            <li>TERM & CONDITIONS</li>
+            <li>CONTACT US</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>MY ACCOUNT</h2>
+          <ul>
+            <li>SIGN IN</li>
+            <li>VIEW CART</li>
+            <li>MY WISHLIST</li>
+            <li>TRACK MY ORDER</li>
+            <li>HELP</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/sproduct.js" defer></script>
+  </body>
+</html>

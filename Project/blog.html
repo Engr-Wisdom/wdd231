@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Ecommerce Website Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/blog.css">
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="logo">
+
+      <button id="menu-btn">&#9776;</button>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./blog.html" class="active">Blog</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <div class="cart-count">            
+            <li><a href="./cart.html"><i class="fas fa-cart-shopping"></i></a></li>
+            <p>0</p>
+          </div>
+        </ul>
+        <button id="remove-btn">&#215;</button>
+      </nav>
+    </header>
+
+    <section class="blog-hero">
+      <img src="./images/b2.jpg" alt="Blog Hero Image">
+      <div>
+        <h1>Read More Blog About Cara</h1>
+        <h2>Read all case studies blog about our products</h2>
+      </div>
+    </section>
+
+    <main>
+      <section id="blog-container"></section>
+
+      <section class="newsletter-cont">
+        <img src="./images/b2.jpg" alt="">
+        <div class="newsletter">
+          <div>
+            <h1>Sign Up For Newsletters</h1>
+            <p>Get E-mail updates about our latest shop and Special offers</p>
+          </div>
+          <div class="signup-cont">
+            <input type="email" placeholder="Your Email Address">
+            <button>SignUp</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-cont">
+        <div>
+          <img src="./images/logo.png" alt="">
+          <h2>CONTACT</h2>
+          <ul>
+            <li><strong>ADDRESS:</strong> 53 Mbupka Road Calabar</li>
+            <li><strong>PHONE NO:</strong> +234 813 990 6556</li>
+          </ul>
+          <h3>FOLLOW US</h3>
+        </div>
+
+        <div>
+          <h2>ABOUT</h2>
+          <ul>
+            <li>ABOUT US</li>
+            <li>DELIVERY INFORMATIONS</li>
+            <li>PRIVACY POLICY</li>
+            <li>TERM & CONDITIONS</li>
+            <li>CONTACT US</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>MY ACCOUNT</h2>
+          <ul>
+            <li>SIGN IN</li>
+            <li>VIEW CART</li>
+            <li>MY WISHLIST</li>
+            <li>TRACK MY ORDER</li>
+            <li>HELP</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./scripts/index.js"></script>
+    <script src="./scripts/blog.js" defer></script>
+  </body>
+</html>
