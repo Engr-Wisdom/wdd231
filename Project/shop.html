@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Wisdom Emmanuel Effiong">
+    <meta name="description" content="Shop the latest fashion trends, super deals, and accessories at Cara Ecommerce.">
     <title>Cara Ecommerce Website Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -20,17 +22,17 @@
           <li><a href="./blog.html">Blog</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <div class="cart-count">            
-            <li><a href="./cart.html"><i class="fas fa-cart-shopping"></i></a></li>
-            <p>0</p>
-          </div>
+          <li class="cart-count">            
+            <a href="./cart.html"><i class="fas fa-cart-shopping"></i></a>
+            <span>0</span>
+          </li>
         </ul>
-        <button id="remove-btn">&#215;</button>
+        <button id="remove-btn">&times;</button>
       </nav>
     </header>
 
     <section class="shop-hero">
-      <img src="./images/b2.jpg" alt="Shop hero image">
+      <img src="./images/about_hero.png" alt="Shop hero image" loading="lazy">
       <div>
         <h1>Super Offers Trends deals</h1>
         <h2>Save more with coupons and up to 45% off.!</h2>
@@ -42,7 +44,7 @@
       </section>
 
       <section class="newsletter-cont">
-        <img src="./images/b2.jpg" alt="">
+        <img src="./images/b2.jpg" alt="Newsletter signup background image" loading="lazy">
         <div class="newsletter">
           <div>
             <h1>Sign Up For Newsletters</h1>
@@ -59,7 +61,7 @@
     <footer>
       <div class="footer-cont">
         <div>
-          <img src="./images/logo.png" alt="">
+          <img src="./images/logo.png" alt="Cara logo" loading="lazy">
           <h2>CONTACT</h2>
           <ul>
             <li><strong>ADDRESS:</strong> 53 Mbupka Road Calabar</li>
@@ -83,7 +85,7 @@
           <h2>MY ACCOUNT</h2>
           <ul>
             <li>SIGN IN</li>
-            <li>VIEW CART</li>
+            <li><a href="./cart.html">VIEW CART</a></li>
             <li>MY WISHLIST</li>
             <li>TRACK MY ORDER</li>
             <li>HELP</li>

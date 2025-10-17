@@ -59,10 +59,10 @@ function displayFeatures() {
 
 displayFeatures()
 
-let carts = getCarts();
+let carts = getCarts() || [];
 
 function updateCartCount() {
-  let cartCount = document.querySelector(".cart-count p")
+  let cartCount = document.querySelector(".cart-count span")
   
   if (cartCount) {
     cartCount.textContent = carts.length;

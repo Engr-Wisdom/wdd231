@@ -6,12 +6,12 @@ function displayBlog(blogs) {
     div.className = "blog-box";
     div.innerHTML = `
           <div class="blog-img">
-              <img src="${blog.img}" alt="">
+              <img src="${blog.img}" alt="${blog.heading}" loading="lazy">
           </div>
           <div class="blog-details">
               <h4>${blog.heading}</h4>
-              <p>${blog.details}<p>
-              <a href="">CONTINUE READING</a>
+              <p>${blog.details}</p>
+              <a href="#">CONTINUE READING</a>
           </div>
       `;
 

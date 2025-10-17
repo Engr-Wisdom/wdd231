@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, li {
-  font-family: Open sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -77,7 +77,7 @@ li {
   position: relative;
 }
 
-.cart-count p {
+.cart-count span {
   position: absolute;
   top: -10px;
   right: -8px;
@@ -137,7 +137,7 @@ main {
 
 .feature-cont div {
   padding: 20px 10px;
-  box-shadow: 2px 2px 10px;
+  box-shadow: 2px 2px 10px var(--accent1);
   border-radius: 5px;
   background-color: #360c0c;
   transition: 0.3s ease;
@@ -743,6 +743,10 @@ footer {
     width: 80%;
   }
 
+  .newsletter-cont img {
+    height: 250px;
+  }
+
   .footer-cont {
     display: grid;
     grid-template-columns: 1fr;
@@ -760,8 +764,17 @@ footer {
 
   .hero button,
   .feature-cont div button {
-    padding: 10px;
-    font-size: 10px;
+    min-height: 40px; 
+    min-width: 40px;
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .signup-cont input,
+  .signup-cont button {
+    min-height: 40px;
+    min-width: 80px;
+    font-size: 12px;
   }
 
   .feature-cont,

@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Wisdom Emmanuel Effiong">
+    <meta name="description" content="View and manage your shopping cart at Cara Ecommerce. Check prices, quantities, and remove items before checkout.">
     <title>Cara Ecommerce Website Cart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -10,7 +12,7 @@
   </head>
   <body>
     <header>
-      <img src="./images/logo.png" alt="logo">
+      <img src="./images/logo.png" alt="Cara logo" loading="lazy">
 
       <button id="menu-btn">&#9776;</button>
       <nav id="nav-bar">
@@ -20,17 +22,17 @@
           <li><a href="./blog.html">Blog</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <div class="cart-count">            
-            <li><a href="./cart.html" class="active"><i class="fas fa-cart-shopping"></i></a></li>
-            <p>0</p>
-          </div>
+          <li class="cart-count">            
+            <a href="./cart.html" class="active"><i class="fas fa-cart-shopping"></i></a>
+            <span>0</span>
+          </li>
         </ul>
-        <button id="remove-btn">&#215;</button>
+        <button id="remove-btn">&times;</button>
       </nav>
     </header>
 
     <section class="cart-hero">
-      <img src="./images/b2.jpg" alt="">
+      <img src="./images/about_hero.png" alt="Cart hero image" loading="lazy">
       <div>
         <h1>#Cara Cart Products Here</h1>
         <h2>Buy Offers Products From Cara Cart</h2>
@@ -55,7 +57,7 @@
       </div>
 
       <section class="newsletter-cont">
-        <img src="./images/b2.jpg" alt="">
+        <img src="./images/b2.jpg" alt="Newsletter signup background image" loading="lazy">
         <div class="newsletter">
           <div>
             <h1>Sign Up For Newsletters</h1>
@@ -72,7 +74,7 @@
     <footer>
       <div class="footer-cont">
         <div>
-          <img src="./images/logo.png" alt="" />
+          <img src="./images/logo.png" alt="Cara logo" loading="lazy">
           <h2>CONTACT</h2>
           <ul>
             <li><strong>ADDRESS:</strong> 53 Mbupka Road Calabar</li>
@@ -96,7 +98,7 @@
           <h2>MY ACCOUNT</h2>
           <ul>
             <li>SIGN IN</li>
-            <li>VIEW CART</li>
+            <li><a href="./cart.html">VIEW CART</a></li>
             <li>MY WISHLIST</li>
             <li>TRACK MY ORDER</li>
             <li>HELP</li>

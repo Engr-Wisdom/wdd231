@@ -32,17 +32,25 @@ function filledAll() {
 submitBtn.addEventListener("click", event => {
     event.preventDefault();
 
-    inputs.forEach(input => {
-        if (input.name.value == "") {
-            input.errorMsg.classList.add("show");
-        } else {
-            submitTxt.classList.add("show")
-            setTimeout(() => {
-                submitTxt.classList.remove("show")
-            }, 5000)
+    let allFilled = true;
 
-            input.name.value = ""
-            submitBtn.style.opacity = 0.5;
+    inputs.forEach(input => {
+        if (input.name.value === "") {
+            input.errorMsg.classList.add("show");
+            allFilled = false;
+        } else {
+            input.errorMsg.classList.remove("show")
         }
     });
+
+    if (allFilled) {
+        submitTxt.classList.add("show")
+        setTimeout(() => {
+            submitTxt.classList.remove("show")
+        }, 5000)
+
+        inputs.forEach(input => input.name.value = "")
+
+        submitBtn.style.opacity = 0.5;
+    }
 })

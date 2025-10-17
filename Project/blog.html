@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Wisdom Emmanuel Effiong">
+    <meta name="description" content="Read the latest blogs and case studies from Cara Ecommerce. Discover product tips, fashion trends, and exclusive deals to stay updated.">
     <title>Cara Ecommerce Website Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -10,7 +12,7 @@
   </head>
   <body>
     <header>
-      <img src="./images/logo.png" alt="logo">
+      <img src="./images/logo.png" alt="Cara logo">
 
       <button id="menu-btn">&#9776;</button>
       <nav id="nav-bar">
@@ -20,17 +22,17 @@
           <li><a href="./blog.html" class="active">Blog</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <div class="cart-count">            
-            <li><a href="./cart.html"><i class="fas fa-cart-shopping"></i></a></li>
-            <p>0</p>
-          </div>
+          <li class="cart-count">            
+            <a href="./cart.html"><i class="fas fa-cart-shopping"></i></a>
+            <span>0</span>
+          </li>
         </ul>
-        <button id="remove-btn">&#215;</button>
+        <button id="remove-btn">&times;</button>
       </nav>
     </header>
 
     <section class="blog-hero">
-      <img src="./images/b2.jpg" alt="Blog Hero Image">
+      <img src="./images/blog_hero.jpg" alt="Blog Hero Image">
       <div>
         <h1>Read More Blog About Cara</h1>
         <h2>Read all case studies blog about our products</h2>
@@ -41,14 +43,14 @@
       <section id="blog-container"></section>
 
       <section class="newsletter-cont">
-        <img src="./images/b2.jpg" alt="">
+        <img src="./images/b2.jpg" alt="Newsletter signup background image" loading="lazy">
         <div class="newsletter">
           <div>
             <h1>Sign Up For Newsletters</h1>
             <p>Get E-mail updates about our latest shop and Special offers</p>
           </div>
           <div class="signup-cont">
-            <input type="email" placeholder="Your Email Address">
+            <input type="email" id="newsletter-email" name="email" placeholder="Your Email Address">
             <button>SignUp</button>
           </div>
         </div>
@@ -58,7 +60,7 @@
     <footer>
       <div class="footer-cont">
         <div>
-          <img src="./images/logo.png" alt="">
+          <img src="./images/logo.png" alt="Cara logo" loading="lazy">
           <h2>CONTACT</h2>
           <ul>
             <li><strong>ADDRESS:</strong> 53 Mbupka Road Calabar</li>
@@ -82,7 +84,7 @@
           <h2>MY ACCOUNT</h2>
           <ul>
             <li>SIGN IN</li>
-            <li>VIEW CART</li>
+            <li><a href="./cart.html">VIEW CART</a></li>
             <li>MY WISHLIST</li>
             <li>TRACK MY ORDER</li>
             <li>HELP</li>
