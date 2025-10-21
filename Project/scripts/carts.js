@@ -6,7 +6,7 @@ export function getCarts() {
     return JSON.parse(localStorage.getItem("carts")) || []
 }
 
-export function displayCartProducts() {
+function displayCartProducts() {
     let carts = getCarts();
 
     let tbody = document.querySelector("tbody")

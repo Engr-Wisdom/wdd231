@@ -9,3 +9,5 @@ window.addEventListener("DOMContentLoaded", () => {
     productName.textContent = product.name;
     productPrice.textContent = product.price;
 })
+
+// http://localhost:5173/

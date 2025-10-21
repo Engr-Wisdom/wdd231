@@ -75,7 +75,6 @@ function addToCarts(product) {
   carts.unshift(product);
   saveCarts(carts);
   updateCartCount()
-  console.log(carts)
 }
 
 // Creating product card function
@@ -96,16 +95,20 @@ export default function createProductCard(product) {
     </div>
   `;
 
-  // div.addEventListener("click", () => {
-  //   localStorage.clear();
-  //   localStorage.setItem("selectedProduct", JSON.stringify(product));
+  div.addEventListener("click", () => {
+    localStorage.clear();
+    localStorage.setItem("selectedProduct", JSON.stringify(product));
 
-  //   window.location.href = "./sproduct.html"
-  // });
+    window.location.href = "./sproduct.html"
+  });
   
   let cartBtn = div.querySelector(".cart-btn");
   
-  cartBtn.addEventListener("click", () => addToCarts(product))
+  cartBtn.addEventListener("click", event => {
+    event.stopPropagation()
+
+    addToCarts(product)
+  })
   
   return div;
 }
@@ -132,18 +135,32 @@ function displayProduct(products) {
 
 async function fetchProduct() {
   try {
-    let response = await fetch("./JSON/products.json");
-    
+    let response = await fetch("./JSON/products.json")
+
     if (!response.ok) {
-      throw new Error("Could not fetch data from this resource")
+      throw new Error("Can't fetch data from this resource")
     }
 
     let values = await response.json();
-    displayProduct(values);
-
-  } catch(error) {
+    displayProduct(values)
+    
+  } catch (error) {
     console.error(error)
   }
 }
 
 fetchProduct();
+
+
+setInterval(() => {
+  let lastModification = document.getElementById("lastModification");
+  let date = new Date();
+  let year = String(date.getFullYear()).padStart(2, 0);
+  let month = String(date.getMonth()).padStart(2, 0);
+  let day = String(date.getDate()).padStart(2, 0);
+  let hour = String(date.getHours()).padStart(2, 0);
+  let minute = String(date.getMinutes()).padStart(2, 0);
+  let second = String(date.getSeconds()).padStart(2, 0);
+
+  lastModification.textContent = `Last Modification: ${day}/${month}/${year}, ${hour}:${minute}:${second}`;
+});
